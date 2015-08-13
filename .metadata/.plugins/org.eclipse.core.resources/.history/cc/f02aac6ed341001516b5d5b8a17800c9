@@ -1,0 +1,46 @@
+import java.io.*;
+
+public class LetterChange {
+
+	public static void main(String[] args) {
+
+		String s1;
+		String s2;
+		try {
+			s1 = getInput("Enter a string: ");
+			s2 = vowelHandler(s1);
+			s2.toCharArray()
+			System.out.println(s2);
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+//				Str.toCharArray;
+				
+				
+		}
+	public static String getInput (String prompt) throws IOException {
+				
+		BufferedReader stdin = new BufferedReader(
+		new InputStreamReader(System.in));
+				
+		System.out.print(prompt);
+		System.out.flush();
+				
+		try {
+			return stdin.readLine();
+		}catch(Exception e){
+			return "Error: " + e.getMessage();
+		}
+	}
+
+	public static String vowelHandler(String Str){
+		Str = Str.replace('a','A');
+		Str = Str.replace('e','E');
+		Str = Str.replace('i','I');
+		Str = Str.replace('o','O');
+		Str = Str.replace('u','U');
+		return Str;
+	}
+}

@@ -1,0 +1,9 @@
+
+public class SimpleAdding {
+
+	public static void main(String[] args) {
+		// Adds numbers from 1 to the num
+		
+	}
+
+}
