@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class ABCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string: ");
+		String str = new String(in.nextLine());
+		
+		System.out.println(Check(str));
+		in.close();
+		
+	}
+	
+	public static String Check(String str){
+	
+	char a = 'a';
+	char b = 'b';
+	char[] ch = str.toCharArray();
+    for(int i= 0; i< ch.length-4 ; i++){
+      if(ch[i]== a ){
+        if(ch[i+4] == b){
+         return "true";
+        }
+      }
+    }
+    for(int i= 0; i< ch.length-4 ; i++){
+        if(ch[i]== b ){
+          if(ch[i+4] == a){
+           return "true";
+          }
+        }
+      }
+    return "false";
+	}
+}
+	

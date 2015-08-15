@@ -1,0 +1,10 @@
+
+public class VowelCount {
+
+	public static void main(String[] args) {
+		// Counts the number of vowels in the string
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class WordCount {
+
+	public static void main(String[] args) {
+		// Counts number of words in a string
+		Scanner in= new Scanner(System.in);
+		System.out.println("Enter a String: ");
+		String str = new String(in.nextLine());
+		
+		String[] ch1= str.split(" ");
+		System.out.println(ch1.length);
+		
+		in.close();
+
+	}
+
+}
