@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CheckNums {
+
+	public static void main(String[] args) {
+		// to compare two numbers and find which is greater
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter first number: ");
+		Integer num1 = new Integer(in.nextLine());
+		
+		System.out.println("Enter second number: ");
+		Integer num2 = new Integer(in.nextLine());
+		
+		if(num1>num2){
+			System.out.println(num1 + " is greater");
+		}
+		else{
+			System.out.println(num2 + " is greater");
+		}
+		
+		in.close();
+		
+	}
+	public static String Check(int num1,int num2){
+		if(num1<num2){
+			return "true";
+		}
+    else if(num1 == num2){
+      return "-1";
+    }
+	else{
+		return "false";
+		}
+	}
+
+}

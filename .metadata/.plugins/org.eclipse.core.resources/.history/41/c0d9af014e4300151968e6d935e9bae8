@@ -1,0 +1,13 @@
+
+public class TImeConvert {
+
+	public static void main(String[] args) {
+		// Converts the given input to hours : minutes format
+		int num = StdIn.readInt();
+		String time1 = new String((num/60));
+	    String time2 = new String(num%60);
+	    String time = time1 + ":" + time2
+
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SimpleSymbols {
+
+	public static void main(String[] args) {
+		// to determine whether or not certain characters are in order 
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a String: ");
+		String str = in.nextLine();
+		
+		for (char ch : str.toCharArray()) {
+			if (Character.isLetter(ch)) {
+				int index = str.indexOf(ch);
+				if(str.charAt(index+1) == "\u0012" && str.charAt(index-1) == "\u0012"){
+					
+				}
+			}
+		}
+		in.close();
+	}
+
+}

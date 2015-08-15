@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class AlphabetSoup {
+
+	public static void main(String[] args) {
+		// sorts the string characters
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter a String: ");
+		String str = new String(in.nextLine());
+		
+		char[] str1 = str.toCharArray();
+		Arrays.sort(str1);
+	    String str2 = "";
+	    for(char ch: str1){
+	      str2 += ch;
+	    }
+	    System.out.println(str2);
+	    
+	    in.close();
+	    
+
+	}
+
+}

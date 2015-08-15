@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CheckNums {
+
+	public static void main(String[] args) {
+		// to compare two numbers and find which is greater
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter first number: ");
+		Integer input = new Integer(in.nextLine());
+		
+		System.out.println("Enter second number: ");
+		Integer input2 = new Integer(in.nextLine());
+		
+		
+		
+		in.close();
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class CheckNums {
+
+	public static void main(String[] args) {
+		// to compare two numbers and tell which is greater
+	}
+
+}

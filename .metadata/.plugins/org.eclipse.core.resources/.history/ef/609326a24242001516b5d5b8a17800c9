@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SimpleSymbols {
+
+	public static void main(String[] args) {
+		// to determine whether or not certain characters are in order 
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a String: ");
+		String str = in.nextLine();
+		
+		for (char ch : password.toCharArray()) {
+			if (Character.isDigit(ch)) {
+				digitFound = true;
+			}
+			if (Character.isLetter(ch)) {
+				letterFound = true;
+			}
+		}
+		in.close();
+	}
+
+}
