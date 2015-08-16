@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ExOh {
+
+	public static void main(String[] args) {
+		//
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter a string: ");;
+		String str = new String(in.nextLine());
+		
+		in.close();
+	}
+	
+	public static String ExohCheck(String str){
+		int numberOfx = 0 ;
+		int numberOfo = 0;
+		for(int i=0; i< str.length() ;i++ ){
+			if (str.charAt(i) == 'x')
+				numberOfx++;
+		}
+		return "false";
+	}
+
+}

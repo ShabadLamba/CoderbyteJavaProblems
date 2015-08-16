@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		// determines is the string is Palindrome or not
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter a String: ");
+		String str = new String(in.nextLine());
+		
+		
+		in.close();
+		
+
+	}
+
+}

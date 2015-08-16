@@ -1,0 +1,10 @@
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		// determines is the string is Palindrome or not
+		
+
+	}
+
+}

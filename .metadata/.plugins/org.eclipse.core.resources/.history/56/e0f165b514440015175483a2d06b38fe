@@ -1,0 +1,33 @@
+//import java.util.Scanner;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class SecondGreatLow {
+
+	public static void main(String[] args) {
+		// 
+//		Scanner in = new Scanner(System.in);
+//		System.out.print("Enter a Integer Array: ");
+//		Integer numArray = new Integer(in.nextInt());
+//		System.out.println(numArray);
+//		in.close();
+		int[] numArray = {2,2,2,5,5,5,6};
+		Set<Integer> set = new HashSet<Integer>();
+	  	for (int i = 0; i < numArray.length; i++)
+	      set.add(numArray[i]);
+	  	numArray = new int[set.size()];
+	    int k = 0;
+	    for (Integer num : set) {
+	    	numArray[k] = num;
+	      	k++;
+	    }
+	    
+		Arrays.sort(numArray);
+		int SecondLow = numArray[1];
+		int SecondGreat = numArray[numArray.length -2];
+		System.out.print(SecondLow + " " + SecondGreat);
+
+	}
+
+}
